@@ -1,9 +1,10 @@
-import com.company.fitnessgeraet;
-import com.company.trainingseinheit;
+package com.company;
 
 public class TrainingseinheitMitZiel extends trainingseinheit implements Trainingsziel
 {
-    int calorieGoal;
+    private int calorieGoal;
+    private int year,month,day,hour,minute;
+    private fitnessgeraet fitnessdevice;
 
     public TrainingseinheitMitZiel(int duration, int year, int month, int day, int hour, int minute, fitnessgeraet fitnessdevice, int calorieGoal)
     {
@@ -31,12 +32,13 @@ public class TrainingseinheitMitZiel extends trainingseinheit implements Trainin
 
     public int getCalorieGoal()
     {
-        return calorieGoal;
+        return this.calorieGoal;
     }
 
     public double getGoalProgress()
     {
-        double progress = (fitnessdevice.calorieburn(this.min))/getCalorieGoal();
+
+        double progress = (fitnessdevice.calorieburn(this.minute))/getCalorieGoal();
 
         return progress;
     }

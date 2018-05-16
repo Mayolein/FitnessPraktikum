@@ -1,3 +1,5 @@
+package com.company;
+
 public interface Trainingsziel {
 
     public void setCalorieGoal(int calorieGoal);
@@ -5,3 +7,4 @@ public interface Trainingsziel {
     public double getGoalProgress();
 
 }
+

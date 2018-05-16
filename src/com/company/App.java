@@ -33,25 +33,10 @@ public class App
 
         trainingseinheit a = new trainingseinheit(15, 2018 , 10,1,2,3,rueckentrainer);
 
-    /*    ObererRuecken.setMuscles();
-        System.out.print(ObererRuecken.getMusclename());
-        System.out.println("\n");
-        ObererRuecken.getMuscles();
-        a.minTraining(500);
-        rueckentrainer.calorieburn(10);
-        rueckentrainer.calorieburn(10, 1);
-        rueckentrainer.support("");
-        rueckentrainer.support(ObererRuecken);
-        rueckentrainer.needElectricity();
-*/
-
-        System.out.println("Das effektivere Geraet hat den Namen "+ effectiveDevice(curls, rueckentrainer));
-     //   a.goalAchieved(500);
-    }
-
-    public void enterMuscles(int a)
-    {
+        TrainingseinheitMitZiel b = new TrainingseinheitMitZiel(10, 2018, 10, 3 , 15, 20, rueckentrainer, 600);
 
     }
+
+   // TrainingseinheitMitZiel.getCaloriegoal();
 
 }
